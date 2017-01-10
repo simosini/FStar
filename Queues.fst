@@ -31,7 +31,7 @@ let okSize2 = assert (size okSl3 = 2) //accepted
 
 (* We now need a couple of functions to retrieve the elements of the list. *)
 
-(* n must be pos cause we dont allow the call of hd tl on empty lists *)
+(* n must be pos cause we dont allow the call of hd and tl on empty lists *)
 
 val hd : #a:Type -> #n:pos -> sl:sList a n -> Tot a
 let hd #a #n sl = match sl with
